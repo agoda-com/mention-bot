@@ -6,7 +6,7 @@
   "scripts": {
     "test": "flow && jest",
     "start": "node run-server.js",
-	"publish": "node ./node_modules/gulp/bin/gulp.js publish"
+	"deploy": "node ./node_modules/gulp/bin/gulp.js publish"
   },
   "main": "./run-mention-bot.js",
   "engines": {
