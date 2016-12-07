@@ -35,6 +35,8 @@
     "jest-cli": "^0.7.1",
     "jsonlint": "^1.6.2",
     "minimatch": "^3.0.0",
-    "node-schedule": "^1.0.0"
+    "node-schedule": "^1.0.0",
+	"gulp": "^3.9.1",
+	"@octopusdeploy/gulp-octo" : "^0.0.8"
   }
 }
