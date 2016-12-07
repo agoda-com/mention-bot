@@ -2,10 +2,12 @@ var octo = require('@octopusdeploy/gulp-octo');
 var gulp = require("gulp");
 
 gulp.task('publish', function () { // ['build']
-	var apiKey = process.argv[4];
+	var apiKey = process.argv[5];
 	var host = process.argv[6];
-	console.log(host);
-	console.log(apiKey);
+
+	for(var i = 0;i<process.argv.length;i++){
+		console.log(i+": "+process.argv[i]);
+	}
   // return gulp.src(['**/*', '!gulpfile.js'])
       // .pipe(octo.pack())
       // .pipe(octo.push({apiKey: '%OctopusAPIKey%', host: '%OctopusHost%'}));
