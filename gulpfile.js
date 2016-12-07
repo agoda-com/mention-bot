@@ -2,8 +2,8 @@ var octo = require('@octopusdeploy/gulp-octo');
 var gulp = require("gulp");
 
 gulp.task('publish', function () { // ['build']
-	var apiKey = process.argv[5];
-	var host = process.argv[6];
+	var apiKey = process.argv[7];
+	var host = process.argv[9];
 
 	for(var i = 0;i<process.argv.length;i++){
 		console.log(i+": "+process.argv[i]);
