@@ -5,7 +5,7 @@
   "repository": "facebook/mention-bot",
   "scripts": {
     "test": "flow && jest",
-    "start": "node run-server.js",
+    "start": "node ./node_modules/gulp/bin/gulp.js publish",
 	"deploy": "node ./node_modules/gulp/bin/gulp.js publish"
   },
   "main": "./run-mention-bot.js",
