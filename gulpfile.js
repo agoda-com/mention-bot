@@ -11,7 +11,7 @@ gulp.task('publish', function () { // ['build']
   // return gulp.src(['**/*', '!gulpfile.js'])
       // .pipe(octo.pack())
       // .pipe(octo.push({apiKey: '%OctopusAPIKey%', host: '%OctopusHost%'}));
-  return gulp.src(['**/*', '!gulpfile.js'])
+  return gulp.src(['**/*', '!gulpfile.js', '!/node_modules/**/*'])
       .pipe(octo.pack())
       .pipe(octo.push({apiKey: apiKey, host: host}));
 });
